@@ -1,0 +1,11 @@
+raw - motor | basic
+raw - motor motoren aufeiner abgestimmt im hardcode (vordefiniert) | na
+
+pid - motor | pid3
+pid - compass | compass
+
+pid - motor kalmann | pid_kalman
+pid - compass kalmann | pid_comp
+
+// pid - motor + compass kalmann | kalmann
+2x pid - motor + compass kalmann | kalmann2

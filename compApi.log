@@ -1,0 +1,680 @@
+2022-03-04 19:42:43,032 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-04 19:42:43,033 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-04 19:42:43,033 INFO [main_name] First pipeline is: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-04 19:42:44,173 INFO [main_name] Trying to get frame with first pipeline
+2022-03-04 19:42:44,173 INFO [main_name] Trying autorest with gstreamer pipelines
+2022-03-04 19:42:44,173 INFO [main_name] Attempting first resolution: 1920x1080 at 30fps
+2022-03-04 19:42:44,173 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-04 19:42:44,176 INFO [main_name] Attempting first resolution: 1920x1080 at 24fps
+2022-03-04 19:42:44,176 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=24/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-04 19:42:44,179 INFO [main_name] Attempting first resolution: 1600x896 at 30fps
+2022-03-04 19:42:44,179 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-04 19:42:44,182 INFO [main_name] Attempting first resolution: 1600x896 at 24fps
+2022-03-04 19:42:44,182 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=24/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-04 19:42:44,185 INFO [main_name] Attempting first resolution: 1280x720 at 30fps
+2022-03-04 19:42:44,185 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1280, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-04 19:42:44,419 INFO [main_name] Initialized video device: 1280x720 at 30fps
+2022-03-04 19:42:44,484 INFO [main_name] Initialized USBCamera on /dev/video0
+2022-03-04 19:42:44,485 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_83250851 in OpencvHandler
+2022-03-04 19:42:44,507 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_83250851 in OpencvHandler - DONE
+2022-03-04 19:42:44,508 INFO [main_name] Using camera calibration file: misc/calibrations/camera_1280_720.xml
+2022-03-04 19:42:44,508 INFO [main_name] Initialized opencv handler
+2022-03-04 19:42:44,531 INFO [main_name] Initialized Sqlite3 database
+2022-03-04 19:42:44,531 INFO [main_name] Initialized double elim gamestate
+2022-03-04 19:42:44,531 INFO [main_name] Created a gamestate
+2022-03-04 19:42:44,531 INFO [main_name] Resetting gamestate
+2022-03-04 19:42:44,531 INFO [main_name] Initialized seeding gamestate
+2022-03-04 19:42:44,531 INFO [main_name] Resetting gamestate
+2022-03-04 19:42:44,531 INFO [main_name] Tried generating logistic packages
+2022-03-04 19:42:44,531 INFO [main_name] Tried generating logistic packages
+2022-03-04 19:42:44,531 INFO [main_name] Adding bmazon zone: 0
+2022-03-04 19:42:44,531 INFO [main_name] Adding bmazon zone: 1
+2022-03-04 19:42:44,531 INFO [main_name] Adding bmazon zone: 2
+2022-03-04 19:42:44,531 INFO [main_name] Adding bmazon zone: 3
+2022-03-04 19:42:44,531 INFO [main_name] Adding bmazon zone: 4
+2022-03-04 19:42:44,531 INFO [main_name] Adding bmazon zone: 5
+2022-03-04 19:42:44,532 INFO [main_name] Adding top left construction area (wood)
+2022-03-04 19:42:44,532 INFO [main_name] Adding top right construction area (steel)
+2022-03-04 19:42:44,532 INFO [main_name] Adding lower left construction area (concrete)
+2022-03-04 19:42:44,532 INFO [main_name] Adding lower right construction area (bricks)
+2022-03-04 19:42:44,532 INFO [main_name] Adding house building zone
+2022-03-04 19:42:44,532 INFO [main_name] Adding parking space zone
+2022-03-04 19:42:44,532 INFO [main_name] Adding logistic center 1 green
+2022-03-04 19:42:44,532 INFO [main_name] Adding logistic center 2 red
+2022-03-04 19:42:44,532 INFO [main_name] Adding logistic center 3 blue
+2022-03-04 19:42:44,532 INFO [main_name] Adding logistic center 4 yellow
+2022-03-04 19:42:44,532 INFO [main_name] Initialized seeding api
+2022-03-04 19:42:44,532 INFO [main_name] Initialized double elim api
+2022-03-04 19:46:03,162 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-04 19:46:03,163 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-04 19:46:03,163 INFO [main_name] First pipeline is: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-04 19:46:03,429 INFO [main_name] Trying to get frame with first pipeline
+2022-03-04 19:46:03,429 INFO [main_name] Trying autorest with gstreamer pipelines
+2022-03-04 19:46:03,429 INFO [main_name] Attempting first resolution: 1920x1080 at 30fps
+2022-03-04 19:46:03,429 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-04 19:46:03,434 INFO [main_name] Attempting first resolution: 1920x1080 at 24fps
+2022-03-04 19:46:03,434 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=24/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-04 19:46:03,439 INFO [main_name] Attempting first resolution: 1600x896 at 30fps
+2022-03-04 19:46:03,439 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-04 19:46:03,444 INFO [main_name] Attempting first resolution: 1600x896 at 24fps
+2022-03-04 19:46:03,444 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=24/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-04 19:46:03,449 INFO [main_name] Attempting first resolution: 1280x720 at 30fps
+2022-03-04 19:46:03,449 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1280, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-04 19:46:03,673 INFO [main_name] Initialized video device: 1280x720 at 30fps
+2022-03-04 19:46:03,741 INFO [main_name] Initialized USBCamera on /dev/video0
+2022-03-04 19:46:03,742 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_2013922539 in OpencvHandler
+2022-03-04 19:46:03,761 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_2013922539 in OpencvHandler - DONE
+2022-03-04 19:46:03,761 INFO [main_name] Using camera calibration file: misc/calibrations/camera_1280_720.xml
+2022-03-04 19:46:03,762 INFO [main_name] Initialized opencv handler
+2022-03-04 19:46:03,762 INFO [main_name] Initialized Sqlite3 database
+2022-03-04 19:46:03,762 INFO [main_name] Initialized double elim gamestate
+2022-03-04 19:46:03,762 INFO [main_name] Created a gamestate
+2022-03-04 19:46:03,762 INFO [main_name] Resetting gamestate
+2022-03-04 19:46:03,762 INFO [main_name] Initialized seeding gamestate
+2022-03-04 19:46:03,762 INFO [main_name] Resetting gamestate
+2022-03-04 19:46:03,762 INFO [main_name] Adding bmazon zone: 0
+2022-03-04 19:46:03,762 INFO [main_name] Adding bmazon zone: 1
+2022-03-04 19:46:03,762 INFO [main_name] Adding bmazon zone: 2
+2022-03-04 19:46:03,762 INFO [main_name] Adding bmazon zone: 3
+2022-03-04 19:46:03,763 INFO [main_name] Adding bmazon zone: 4
+2022-03-04 19:46:03,763 INFO [main_name] Adding bmazon zone: 5
+2022-03-04 19:46:03,763 INFO [main_name] Adding top left construction area (wood)
+2022-03-04 19:46:03,763 INFO [main_name] Adding top right construction area (steel)
+2022-03-04 19:46:03,763 INFO [main_name] Adding lower left construction area (concrete)
+2022-03-04 19:46:03,763 INFO [main_name] Adding lower right construction area (bricks)
+2022-03-04 19:46:03,763 INFO [main_name] Adding house building zone
+2022-03-04 19:46:03,763 INFO [main_name] Adding parking space zone
+2022-03-04 19:46:03,763 INFO [main_name] Adding logistic center 1 green
+2022-03-04 19:46:03,763 INFO [main_name] Adding logistic center 2 red
+2022-03-04 19:46:03,763 INFO [main_name] Adding logistic center 3 blue
+2022-03-04 19:46:03,763 INFO [main_name] Adding logistic center 4 yellow
+2022-03-04 19:46:03,763 INFO [main_name] Initialized seeding api
+2022-03-04 19:46:03,763 INFO [main_name] Initialized double elim api
+2022-03-04 19:46:03,764 INFO [main_name] Found ipv4: lo adr: 127.0.0.1
+2022-03-04 19:46:03,764 INFO [main_name] Found ipv4: wlp1s0 adr: 10.20.86.177
+2022-03-04 19:46:03,764 INFO [main_name] Found ipv6: lo adr: ::1
+2022-03-04 19:46:03,764 INFO [main_name] Found ipv6: wlp1s0 adr: fe80::a076:53cc:91b9:d257
+2022-03-04 19:46:03,764 INFO [main_name] IP IS: 10.20.86.177
+2022-03-04 19:46:03,764 INFO [main_name] Initialized rest api
+2022-03-04 19:47:32,066 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-04 19:47:32,067 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-04 19:47:32,067 INFO [main_name] First pipeline is: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-04 19:47:33,004 INFO [main_name] Trying to get frame with first pipeline
+2022-03-04 19:47:33,070 INFO [main_name] Initialized USBCamera on /dev/video4
+2022-03-04 19:47:33,070 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1920402535 in OpencvHandler
+2022-03-04 19:47:33,093 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1920402535 in OpencvHandler - DONE
+2022-03-04 19:47:33,093 INFO [main_name] Using camera calibration file: misc/calibrations/camera_1920_1080.xml
+2022-03-04 19:47:33,093 INFO [main_name] Initialized opencv handler
+2022-03-04 19:47:33,094 INFO [main_name] Initialized Sqlite3 database
+2022-03-04 19:47:33,094 INFO [main_name] Initialized double elim gamestate
+2022-03-04 19:47:33,094 INFO [main_name] Created a gamestate
+2022-03-04 19:47:33,094 INFO [main_name] Resetting gamestate
+2022-03-04 19:47:33,094 INFO [main_name] Tried generating logistic packages
+2022-03-04 19:47:33,094 INFO [main_name] Initialized seeding gamestate
+2022-03-04 19:47:33,094 INFO [main_name] Resetting gamestate
+2022-03-04 19:47:33,094 INFO [main_name] Adding bmazon zone: 0
+2022-03-04 19:47:33,094 INFO [main_name] Adding bmazon zone: 1
+2022-03-04 19:47:33,094 INFO [main_name] Adding bmazon zone: 2
+2022-03-04 19:47:33,094 INFO [main_name] Adding bmazon zone: 3
+2022-03-04 19:47:33,094 INFO [main_name] Adding bmazon zone: 4
+2022-03-04 19:47:33,094 INFO [main_name] Adding bmazon zone: 5
+2022-03-04 19:47:33,094 INFO [main_name] Adding top left construction area (wood)
+2022-03-04 19:47:33,094 INFO [main_name] Adding top right construction area (steel)
+2022-03-04 19:47:33,094 INFO [main_name] Adding lower left construction area (concrete)
+2022-03-04 19:47:33,094 INFO [main_name] Adding lower right construction area (bricks)
+2022-03-04 19:47:33,094 INFO [main_name] Adding house building zone
+2022-03-04 19:47:33,094 INFO [main_name] Adding parking space zone
+2022-03-04 19:47:33,094 INFO [main_name] Adding logistic center 1 green
+2022-03-04 19:47:33,094 INFO [main_name] Adding logistic center 2 red
+2022-03-04 19:47:33,095 INFO [main_name] Adding logistic center 3 blue
+2022-03-04 19:47:33,095 INFO [main_name] Adding logistic center 4 yellow
+2022-03-04 19:47:33,095 INFO [main_name] Initialized seeding api
+2022-03-04 19:47:33,095 INFO [main_name] Initialized double elim api
+2022-03-04 19:47:33,096 INFO [main_name] Found ipv4: lo adr: 127.0.0.1
+2022-03-04 19:47:33,096 INFO [main_name] Found ipv4: wlp1s0 adr: 10.20.86.177
+2022-03-04 19:47:33,096 INFO [main_name] Found ipv6: lo adr: ::1
+2022-03-04 19:47:33,096 INFO [main_name] Found ipv6: wlp1s0 adr: fe80::a076:53cc:91b9:d257
+2022-03-04 19:47:33,096 INFO [main_name] IP IS: 10.20.86.177
+2022-03-04 19:47:33,096 INFO [main_name] Initialized rest api
+2022-03-06 14:30:56,337 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-06 14:30:56,339 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-06 14:30:56,339 INFO [main_name] First pipeline is: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:30:56,503 INFO [main_name] Trying to get frame with first pipeline
+2022-03-06 14:30:56,503 INFO [main_name] Trying autorest with gstreamer pipelines
+2022-03-06 14:30:56,503 INFO [main_name] Attempting first resolution: 1920x1080 at 30fps
+2022-03-06 14:30:56,503 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:30:56,506 INFO [main_name] Attempting first resolution: 1920x1080 at 24fps
+2022-03-06 14:30:56,506 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=24/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:30:56,509 INFO [main_name] Attempting first resolution: 1600x896 at 30fps
+2022-03-06 14:30:56,509 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:30:56,512 INFO [main_name] Attempting first resolution: 1600x896 at 24fps
+2022-03-06 14:30:56,512 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=24/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:30:56,516 INFO [main_name] Attempting first resolution: 1280x720 at 30fps
+2022-03-06 14:30:56,516 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1280, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:30:56,740 INFO [main_name] Initialized video device: 1280x720 at 30fps
+2022-03-06 14:30:56,803 INFO [main_name] Initialized USBCamera on /dev/video0
+2022-03-06 14:30:56,804 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1176417020 in OpencvHandler
+2022-03-06 14:30:56,829 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1176417020 in OpencvHandler - DONE
+2022-03-06 14:30:56,829 INFO [main_name] Using camera calibration file: misc/calibrations/camera_1280_720.xml
+2022-03-06 14:30:56,831 INFO [main_name] Initialized opencv handler
+2022-03-06 14:30:56,834 INFO [main_name] Initialized Sqlite3 database
+2022-03-06 14:30:56,835 INFO [main_name] Initialized double elim gamestate
+2022-03-06 14:30:56,835 INFO [main_name] Created a gamestate
+2022-03-06 14:30:56,835 INFO [main_name] Resetting gamestate
+2022-03-06 14:30:56,835 INFO [main_name] Initialized seeding gamestate
+2022-03-06 14:30:56,835 INFO [main_name] Resetting gamestate
+2022-03-06 14:30:56,835 INFO [main_name] Adding bmazon zone: 0
+2022-03-06 14:30:56,835 INFO [main_name] Adding bmazon zone: 1
+2022-03-06 14:30:56,835 INFO [main_name] Adding bmazon zone: 2
+2022-03-06 14:30:56,835 INFO [main_name] Adding bmazon zone: 3
+2022-03-06 14:30:56,835 INFO [main_name] Adding bmazon zone: 4
+2022-03-06 14:30:56,835 INFO [main_name] Adding bmazon zone: 5
+2022-03-06 14:30:56,835 INFO [main_name] Adding top left construction area (wood)
+2022-03-06 14:30:56,835 INFO [main_name] Adding top right construction area (steel)
+2022-03-06 14:30:56,835 INFO [main_name] Adding lower left construction area (concrete)
+2022-03-06 14:30:56,835 INFO [main_name] Adding lower right construction area (bricks)
+2022-03-06 14:30:56,835 INFO [main_name] Adding house building zone
+2022-03-06 14:30:56,835 INFO [main_name] Adding parking space zone
+2022-03-06 14:30:56,835 INFO [main_name] Adding logistic center 1 green
+2022-03-06 14:30:56,835 INFO [main_name] Adding logistic center 2 red
+2022-03-06 14:30:56,835 INFO [main_name] Adding logistic center 3 blue
+2022-03-06 14:30:56,835 INFO [main_name] Adding logistic center 4 yellow
+2022-03-06 14:30:56,835 INFO [main_name] Initialized seeding api
+2022-03-06 14:30:56,835 INFO [main_name] Initialized double elim api
+2022-03-06 14:30:56,836 INFO [main_name] Found ipv4: lo adr: 127.0.0.1
+2022-03-06 14:30:56,836 INFO [main_name] Found ipv4: wlp1s0 adr: 10.0.0.250
+2022-03-06 14:30:56,836 INFO [main_name] Found ipv6: lo adr: ::1
+2022-03-06 14:30:56,836 INFO [main_name] Found ipv6: wlp1s0 adr: 2001:871:25a:34d2:297b:40b2:bee4:ff40
+2022-03-06 14:30:56,836 INFO [main_name] Found ipv6: wlp1s0 adr: fe80::a48b:8978:e52e:f96f
+2022-03-06 14:30:56,836 INFO [main_name] IP IS: 10.0.0.250
+2022-03-06 14:30:56,836 INFO [main_name] Initialized rest api
+2022-03-06 14:34:19,345 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-06 14:34:19,346 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-06 14:34:19,346 INFO [main_name] First pipeline is: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,494 INFO [main_name] Trying to get frame with first pipeline
+2022-03-06 14:34:19,494 INFO [main_name] Trying autorest with gstreamer pipelines
+2022-03-06 14:34:19,494 INFO [main_name] Attempting first resolution: 1920x1080 at 30fps
+2022-03-06 14:34:19,494 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,497 INFO [main_name] Attempting first resolution: 1920x1080 at 24fps
+2022-03-06 14:34:19,497 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,500 INFO [main_name] Attempting first resolution: 1600x896 at 30fps
+2022-03-06 14:34:19,500 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,503 INFO [main_name] Attempting first resolution: 1600x896 at 24fps
+2022-03-06 14:34:19,503 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,505 INFO [main_name] Attempting first resolution: 1280x720 at 30fps
+2022-03-06 14:34:19,505 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1280, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,509 INFO [main_name] Attempting first resolution: 1280x720 at 24fps
+2022-03-06 14:34:19,509 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=1280, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,512 INFO [main_name] Attempting first resolution: 960x720 at 30fps
+2022-03-06 14:34:19,512 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=960, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,514 INFO [main_name] Attempting first resolution: 960x720 at 24fps
+2022-03-06 14:34:19,515 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=960, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,517 INFO [main_name] Attempting first resolution: 1024x576 at 30fps
+2022-03-06 14:34:19,517 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1024, height=576,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,520 INFO [main_name] Attempting first resolution: 1024x576 at 24fps
+2022-03-06 14:34:19,520 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=1024, height=576,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,523 INFO [main_name] Attempting first resolution: 864x480 at 30fps
+2022-03-06 14:34:19,523 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=864, height=480,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,526 INFO [main_name] Attempting first resolution: 864x480 at 24fps
+2022-03-06 14:34:19,527 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=864, height=480,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,530 INFO [main_name] Attempting first resolution: 800x600 at 30fps
+2022-03-06 14:34:19,530 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=800, height=600,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,533 INFO [main_name] Attempting first resolution: 800x600 at 24fps
+2022-03-06 14:34:19,533 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=800, height=600,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,536 INFO [main_name] Attempting first resolution: 800x448 at 30fps
+2022-03-06 14:34:19,536 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=800, height=448,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,539 INFO [main_name] Attempting first resolution: 800x448 at 24fps
+2022-03-06 14:34:19,539 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=800, height=448,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,541 INFO [main_name] Attempting first resolution: 640x480 at 30fps
+2022-03-06 14:34:19,541 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=640, height=480,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,545 INFO [main_name] Attempting first resolution: 640x480 at 24fps
+2022-03-06 14:34:19,545 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=640, height=480,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,547 INFO [main_name] Attempting first resolution: 640x360 at 30fps
+2022-03-06 14:34:19,548 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=640, height=360,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,550 INFO [main_name] Attempting first resolution: 640x360 at 24fps
+2022-03-06 14:34:19,550 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=640, height=360,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-06 14:34:19,559 INFO [main_name] video after FIRST reset is: (0, 0)
+2022-03-06 14:34:19,561 INFO [main_name] video after SECOND reset is: (1280, 720)
+2022-03-06 14:34:19,561 INFO [main_name] Initialized USBCamera on /dev/video4
+2022-03-07 09:38:57,375 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-07 09:38:57,376 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-07 09:38:57,376 INFO [main_name] First pipeline is: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:38:57,540 INFO [main_name] Trying to get frame with first pipeline
+2022-03-07 09:38:57,540 INFO [main_name] Trying autorest with gstreamer pipelines
+2022-03-07 09:38:57,540 INFO [main_name] Attempting first resolution: 1920x1080 at 30fps
+2022-03-07 09:38:57,540 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:38:57,544 INFO [main_name] Attempting first resolution: 1920x1080 at 24fps
+2022-03-07 09:38:57,544 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=24/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:38:57,546 INFO [main_name] Attempting first resolution: 1600x896 at 30fps
+2022-03-07 09:38:57,546 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:38:57,549 INFO [main_name] Attempting first resolution: 1600x896 at 24fps
+2022-03-07 09:38:57,549 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=24/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:38:57,552 INFO [main_name] Attempting first resolution: 1280x720 at 30fps
+2022-03-07 09:38:57,552 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1280, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:38:57,778 INFO [main_name] Initialized video device: 1280x720 at 30fps
+2022-03-07 09:38:57,841 INFO [main_name] Initialized USBCamera on /dev/video0
+2022-03-07 09:38:57,841 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1008296131 in OpencvHandler
+2022-03-07 09:38:57,866 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1008296131 in OpencvHandler - DONE
+2022-03-07 09:38:57,866 INFO [main_name] Using camera calibration file: misc/calibrations/camera_1280_720.xml
+2022-03-07 09:38:57,867 INFO [main_name] Initialized opencv handler
+2022-03-07 09:38:57,870 INFO [main_name] Initialized Sqlite3 database
+2022-03-07 09:38:57,870 INFO [main_name] Initialized double elim gamestate
+2022-03-07 09:38:57,870 INFO [main_name] Created a gamestate
+2022-03-07 09:38:57,870 INFO [main_name] Resetting gamestate
+2022-03-07 09:38:57,870 INFO [main_name] Initialized seeding gamestate
+2022-03-07 09:38:57,870 INFO [main_name] Resetting gamestate
+2022-03-07 09:38:57,870 INFO [main_name] Tried generating logistic packages
+2022-03-07 09:38:57,870 INFO [main_name] Adding bmazon zone: 0
+2022-03-07 09:38:57,870 INFO [main_name] Adding bmazon zone: 1
+2022-03-07 09:38:57,870 INFO [main_name] Adding bmazon zone: 2
+2022-03-07 09:38:57,870 INFO [main_name] Adding bmazon zone: 3
+2022-03-07 09:38:57,870 INFO [main_name] Adding bmazon zone: 4
+2022-03-07 09:38:57,870 INFO [main_name] Adding bmazon zone: 5
+2022-03-07 09:38:57,870 INFO [main_name] Adding top left construction area (wood)
+2022-03-07 09:38:57,870 INFO [main_name] Adding top right construction area (steel)
+2022-03-07 09:38:57,870 INFO [main_name] Adding lower left construction area (concrete)
+2022-03-07 09:38:57,870 INFO [main_name] Adding lower right construction area (bricks)
+2022-03-07 09:38:57,871 INFO [main_name] Adding house building zone
+2022-03-07 09:38:57,871 INFO [main_name] Adding parking space zone
+2022-03-07 09:38:57,871 INFO [main_name] Adding logistic center 1 green
+2022-03-07 09:38:57,871 INFO [main_name] Adding logistic center 2 red
+2022-03-07 09:38:57,871 INFO [main_name] Adding logistic center 3 blue
+2022-03-07 09:38:57,871 INFO [main_name] Adding logistic center 4 yellow
+2022-03-07 09:38:57,871 INFO [main_name] Initialized seeding api
+2022-03-07 09:38:57,871 INFO [main_name] Initialized double elim api
+2022-03-07 09:38:57,871 INFO [main_name] Found ipv4: lo adr: 127.0.0.1
+2022-03-07 09:38:57,871 INFO [main_name] Found ipv6: lo adr: ::1
+2022-03-07 09:38:57,871 INFO [main_name] IP IS: err
+2022-03-07 09:38:57,871 INFO [main_name] Initialized rest api
+2022-03-07 09:39:15,274 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-07 09:39:15,275 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-07 09:39:15,275 INFO [main_name] First pipeline is: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,418 INFO [main_name] Trying to get frame with first pipeline
+2022-03-07 09:39:15,418 INFO [main_name] Trying autorest with gstreamer pipelines
+2022-03-07 09:39:15,418 INFO [main_name] Attempting first resolution: 1920x1080 at 30fps
+2022-03-07 09:39:15,418 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,421 INFO [main_name] Attempting first resolution: 1920x1080 at 24fps
+2022-03-07 09:39:15,421 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,423 INFO [main_name] Attempting first resolution: 1600x896 at 30fps
+2022-03-07 09:39:15,423 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,426 INFO [main_name] Attempting first resolution: 1600x896 at 24fps
+2022-03-07 09:39:15,426 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,428 INFO [main_name] Attempting first resolution: 1280x720 at 30fps
+2022-03-07 09:39:15,428 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1280, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,431 INFO [main_name] Attempting first resolution: 1280x720 at 24fps
+2022-03-07 09:39:15,431 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=1280, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,433 INFO [main_name] Attempting first resolution: 960x720 at 30fps
+2022-03-07 09:39:15,433 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=960, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,436 INFO [main_name] Attempting first resolution: 960x720 at 24fps
+2022-03-07 09:39:15,436 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=960, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,439 INFO [main_name] Attempting first resolution: 1024x576 at 30fps
+2022-03-07 09:39:15,439 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1024, height=576,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,442 INFO [main_name] Attempting first resolution: 1024x576 at 24fps
+2022-03-07 09:39:15,442 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=1024, height=576,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,444 INFO [main_name] Attempting first resolution: 864x480 at 30fps
+2022-03-07 09:39:15,444 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=864, height=480,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,446 INFO [main_name] Attempting first resolution: 864x480 at 24fps
+2022-03-07 09:39:15,446 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=864, height=480,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,449 INFO [main_name] Attempting first resolution: 800x600 at 30fps
+2022-03-07 09:39:15,449 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=800, height=600,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,453 INFO [main_name] Attempting first resolution: 800x600 at 24fps
+2022-03-07 09:39:15,453 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=800, height=600,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,455 INFO [main_name] Attempting first resolution: 800x448 at 30fps
+2022-03-07 09:39:15,455 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=800, height=448,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,458 INFO [main_name] Attempting first resolution: 800x448 at 24fps
+2022-03-07 09:39:15,458 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=800, height=448,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,460 INFO [main_name] Attempting first resolution: 640x480 at 30fps
+2022-03-07 09:39:15,461 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=640, height=480,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,463 INFO [main_name] Attempting first resolution: 640x480 at 24fps
+2022-03-07 09:39:15,463 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=640, height=480,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,465 INFO [main_name] Attempting first resolution: 640x360 at 30fps
+2022-03-07 09:39:15,465 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=640, height=360,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,468 INFO [main_name] Attempting first resolution: 640x360 at 24fps
+2022-03-07 09:39:15,468 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=640, height=360,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:15,475 INFO [main_name] video after FIRST reset is: (0, 0)
+2022-03-07 09:39:15,479 INFO [main_name] video after SECOND reset is: (1280, 720)
+2022-03-07 09:39:15,479 INFO [main_name] Initialized USBCamera on /dev/video4
+2022-03-07 09:39:26,560 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-07 09:39:26,561 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-07 09:39:26,561 INFO [main_name] First pipeline is: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:26,705 INFO [main_name] Trying to get frame with first pipeline
+2022-03-07 09:39:26,705 INFO [main_name] Trying autorest with gstreamer pipelines
+2022-03-07 09:39:26,705 INFO [main_name] Attempting first resolution: 1920x1080 at 30fps
+2022-03-07 09:39:26,705 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:26,709 INFO [main_name] Attempting first resolution: 1920x1080 at 24fps
+2022-03-07 09:39:26,709 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=24/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:26,712 INFO [main_name] Attempting first resolution: 1600x896 at 30fps
+2022-03-07 09:39:26,712 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:26,715 INFO [main_name] Attempting first resolution: 1600x896 at 24fps
+2022-03-07 09:39:26,715 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=24/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:26,719 INFO [main_name] Attempting first resolution: 1280x720 at 30fps
+2022-03-07 09:39:26,719 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1280, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-07 09:39:26,936 INFO [main_name] Initialized video device: 1280x720 at 30fps
+2022-03-07 09:39:27,006 INFO [main_name] Initialized USBCamera on /dev/video0
+2022-03-07 09:39:27,006 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_276996528 in OpencvHandler
+2022-03-07 09:39:27,022 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_276996528 in OpencvHandler - DONE
+2022-03-07 09:39:27,022 INFO [main_name] Using camera calibration file: misc/calibrations/camera_1280_720.xml
+2022-03-07 09:39:27,023 INFO [main_name] Initialized opencv handler
+2022-03-07 09:39:27,024 INFO [main_name] Initialized Sqlite3 database
+2022-03-07 09:39:27,024 INFO [main_name] Initialized double elim gamestate
+2022-03-07 09:39:27,024 INFO [main_name] Created a gamestate
+2022-03-07 09:39:27,024 INFO [main_name] Resetting gamestate
+2022-03-07 09:39:27,024 INFO [main_name] Tried generating logistic packages
+2022-03-07 09:39:27,024 INFO [main_name] Tried generating logistic packages
+2022-03-07 09:39:27,024 INFO [main_name] Initialized seeding gamestate
+2022-03-07 09:39:27,024 INFO [main_name] Resetting gamestate
+2022-03-07 09:39:27,024 INFO [main_name] Tried generating logistic packages
+2022-03-07 09:39:27,024 INFO [main_name] Adding bmazon zone: 0
+2022-03-07 09:39:27,024 INFO [main_name] Adding bmazon zone: 1
+2022-03-07 09:39:27,024 INFO [main_name] Adding bmazon zone: 2
+2022-03-07 09:39:27,024 INFO [main_name] Adding bmazon zone: 3
+2022-03-07 09:39:27,024 INFO [main_name] Adding bmazon zone: 4
+2022-03-07 09:39:27,024 INFO [main_name] Adding bmazon zone: 5
+2022-03-07 09:39:27,024 INFO [main_name] Adding top left construction area (wood)
+2022-03-07 09:39:27,024 INFO [main_name] Adding top right construction area (steel)
+2022-03-07 09:39:27,024 INFO [main_name] Adding lower left construction area (concrete)
+2022-03-07 09:39:27,024 INFO [main_name] Adding lower right construction area (bricks)
+2022-03-07 09:39:27,024 INFO [main_name] Adding house building zone
+2022-03-07 09:39:27,024 INFO [main_name] Adding parking space zone
+2022-03-07 09:39:27,024 INFO [main_name] Adding logistic center 1 green
+2022-03-07 09:39:27,024 INFO [main_name] Adding logistic center 2 red
+2022-03-07 09:39:27,024 INFO [main_name] Adding logistic center 3 blue
+2022-03-07 09:39:27,024 INFO [main_name] Adding logistic center 4 yellow
+2022-03-07 09:39:27,024 INFO [main_name] Initialized seeding api
+2022-03-07 09:39:27,024 INFO [main_name] Initialized double elim api
+2022-03-07 09:39:27,025 INFO [main_name] Found ipv4: lo adr: 127.0.0.1
+2022-03-07 09:39:27,025 INFO [main_name] Found ipv6: lo adr: ::1
+2022-03-07 09:39:27,025 INFO [main_name] IP IS: err
+2022-03-07 09:39:27,025 INFO [main_name] Initialized rest api
+2022-03-08 15:07:44,384 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-08 15:07:44,385 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-08 15:07:44,385 INFO [main_name] First pipeline is: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,530 INFO [main_name] Trying to get frame with first pipeline
+2022-03-08 15:07:44,530 INFO [main_name] Trying autorest with gstreamer pipelines
+2022-03-08 15:07:44,530 INFO [main_name] Attempting first resolution: 1920x1080 at 30fps
+2022-03-08 15:07:44,530 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,531 INFO [main_name] Attempting first resolution: 1920x1080 at 24fps
+2022-03-08 15:07:44,531 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,532 INFO [main_name] Attempting first resolution: 1600x896 at 30fps
+2022-03-08 15:07:44,532 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,534 INFO [main_name] Attempting first resolution: 1600x896 at 24fps
+2022-03-08 15:07:44,534 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=1600, height=896,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,535 INFO [main_name] Attempting first resolution: 1280x720 at 30fps
+2022-03-08 15:07:44,535 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1280, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,536 INFO [main_name] Attempting first resolution: 1280x720 at 24fps
+2022-03-08 15:07:44,536 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=1280, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,537 INFO [main_name] Attempting first resolution: 960x720 at 30fps
+2022-03-08 15:07:44,537 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=960, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,538 INFO [main_name] Attempting first resolution: 960x720 at 24fps
+2022-03-08 15:07:44,538 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=960, height=720,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,540 INFO [main_name] Attempting first resolution: 1024x576 at 30fps
+2022-03-08 15:07:44,540 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1024, height=576,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,541 INFO [main_name] Attempting first resolution: 1024x576 at 24fps
+2022-03-08 15:07:44,541 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=1024, height=576,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,542 INFO [main_name] Attempting first resolution: 864x480 at 30fps
+2022-03-08 15:07:44,542 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=864, height=480,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,544 INFO [main_name] Attempting first resolution: 864x480 at 24fps
+2022-03-08 15:07:44,544 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=864, height=480,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,545 INFO [main_name] Attempting first resolution: 800x600 at 30fps
+2022-03-08 15:07:44,545 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=800, height=600,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,547 INFO [main_name] Attempting first resolution: 800x600 at 24fps
+2022-03-08 15:07:44,547 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=800, height=600,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,548 INFO [main_name] Attempting first resolution: 800x448 at 30fps
+2022-03-08 15:07:44,548 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=800, height=448,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,549 INFO [main_name] Attempting first resolution: 800x448 at 24fps
+2022-03-08 15:07:44,549 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=800, height=448,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,550 INFO [main_name] Attempting first resolution: 640x480 at 30fps
+2022-03-08 15:07:44,550 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=640, height=480,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,552 INFO [main_name] Attempting first resolution: 640x480 at 24fps
+2022-03-08 15:07:44,552 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=640, height=480,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,553 INFO [main_name] Attempting first resolution: 640x360 at 30fps
+2022-03-08 15:07:44,553 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=640, height=360,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,554 INFO [main_name] Attempting first resolution: 640x360 at 24fps
+2022-03-08 15:07:44,554 INFO [main_name] Trying out pipeline: v4l2src device=/dev/video4 ! image/jpeg,framerate=24/1,width=640, height=360,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:07:44,558 INFO [main_name] video after FIRST reset is: (0, 0)
+2022-03-08 15:07:44,561 INFO [main_name] video after SECOND reset is: (1280, 720)
+2022-03-08 15:07:44,561 INFO [main_name] Initialized USBCamera on /dev/video4
+2022-03-08 15:07:59,482 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-08 15:07:59,483 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-08 15:07:59,483 INFO [main_name] First pipeline is: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 15:08:00,475 INFO [main_name] Trying to get frame with first pipeline
+2022-03-08 15:08:00,535 INFO [main_name] Initialized USBCamera on /dev/video4
+2022-03-08 15:08:00,536 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1363512990 in OpencvHandler
+2022-03-08 15:08:00,559 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1363512990 in OpencvHandler - DONE
+2022-03-08 15:08:00,560 INFO [main_name] Using camera calibration file: misc/calibrations/camera_1920_1080.xml
+2022-03-08 15:08:00,561 INFO [main_name] Initialized opencv handler
+2022-03-08 15:08:00,563 INFO [main_name] Initialized Sqlite3 database
+2022-03-08 15:08:00,563 INFO [main_name] Initialized double elim gamestate
+2022-03-08 15:08:00,563 INFO [main_name] Created a gamestate
+2022-03-08 15:08:00,563 INFO [main_name] Resetting gamestate
+2022-03-08 15:08:00,563 INFO [main_name] Initialized seeding gamestate
+2022-03-08 15:08:00,563 INFO [main_name] Resetting gamestate
+2022-03-08 15:08:00,563 INFO [main_name] Tried generating logistic packages
+2022-03-08 15:08:00,563 INFO [main_name] Tried generating logistic packages
+2022-03-08 15:08:00,563 INFO [main_name] Tried generating logistic packages
+2022-03-08 15:08:00,563 INFO [main_name] Adding bmazon zone: 0
+2022-03-08 15:08:00,563 INFO [main_name] Adding bmazon zone: 1
+2022-03-08 15:08:00,563 INFO [main_name] Adding bmazon zone: 2
+2022-03-08 15:08:00,563 INFO [main_name] Adding bmazon zone: 3
+2022-03-08 15:08:00,563 INFO [main_name] Adding bmazon zone: 4
+2022-03-08 15:08:00,563 INFO [main_name] Adding bmazon zone: 5
+2022-03-08 15:08:00,563 INFO [main_name] Adding top left construction area (wood)
+2022-03-08 15:08:00,563 INFO [main_name] Adding top right construction area (steel)
+2022-03-08 15:08:00,563 INFO [main_name] Adding lower left construction area (concrete)
+2022-03-08 15:08:00,563 INFO [main_name] Adding lower right construction area (bricks)
+2022-03-08 15:08:00,563 INFO [main_name] Adding house building zone
+2022-03-08 15:08:00,563 INFO [main_name] Adding parking space zone
+2022-03-08 15:08:00,563 INFO [main_name] Adding logistic center 1 green
+2022-03-08 15:08:00,563 INFO [main_name] Adding logistic center 2 red
+2022-03-08 15:08:00,563 INFO [main_name] Adding logistic center 3 blue
+2022-03-08 15:08:00,563 INFO [main_name] Adding logistic center 4 yellow
+2022-03-08 15:08:00,563 INFO [main_name] Initialized seeding api
+2022-03-08 15:08:00,563 INFO [main_name] Initialized double elim api
+2022-03-08 15:08:00,564 INFO [main_name] Found ipv4: lo adr: 127.0.0.1
+2022-03-08 15:08:00,564 INFO [main_name] Found ipv4: wlp1s0 adr: 10.20.86.177
+2022-03-08 15:08:00,564 INFO [main_name] Found ipv6: lo adr: ::1
+2022-03-08 15:08:00,564 INFO [main_name] Found ipv6: wlp1s0 adr: fe80::a076:53cc:91b9:d257
+2022-03-08 15:08:00,564 INFO [main_name] IP IS: 10.20.86.177
+2022-03-08 15:08:00,564 INFO [main_name] Initialized rest api
+2022-03-08 18:02:48,837 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-08 18:02:48,838 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-08 18:02:48,838 INFO [main_name] First pipeline is: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 18:02:50,713 INFO [main_name] Trying to get frame with first pipeline
+2022-03-08 18:02:50,769 INFO [main_name] Initialized USBCamera on /dev/video4
+2022-03-08 18:02:50,769 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_758949374 in OpencvHandler
+2022-03-08 18:02:50,788 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_758949374 in OpencvHandler - DONE
+2022-03-08 18:02:50,788 INFO [main_name] Using camera calibration file: misc/calibrations/camera_1920_1080.xml
+2022-03-08 18:02:50,789 INFO [main_name] Initialized opencv handler
+2022-03-08 18:02:50,789 INFO [main_name] Initialized Sqlite3 database
+2022-03-08 18:02:50,789 INFO [main_name] Initialized double elim gamestate
+2022-03-08 18:02:50,789 INFO [main_name] Created a gamestate
+2022-03-08 18:02:50,789 INFO [main_name] Resetting gamestate
+2022-03-08 18:02:50,790 INFO [main_name] Initialized seeding gamestate
+2022-03-08 18:02:50,790 INFO [main_name] Resetting gamestate
+2022-03-08 18:02:50,790 INFO [main_name] Adding bmazon zone: 0
+2022-03-08 18:02:50,790 INFO [main_name] Adding bmazon zone: 1
+2022-03-08 18:02:50,790 INFO [main_name] Adding bmazon zone: 2
+2022-03-08 18:02:50,790 INFO [main_name] Adding bmazon zone: 3
+2022-03-08 18:02:50,790 INFO [main_name] Adding bmazon zone: 4
+2022-03-08 18:02:50,790 INFO [main_name] Adding bmazon zone: 5
+2022-03-08 18:02:50,790 INFO [main_name] Adding top left construction area (wood)
+2022-03-08 18:02:50,790 INFO [main_name] Adding top right construction area (steel)
+2022-03-08 18:02:50,790 INFO [main_name] Adding lower left construction area (concrete)
+2022-03-08 18:02:50,790 INFO [main_name] Adding lower right construction area (bricks)
+2022-03-08 18:02:50,790 INFO [main_name] Adding house building zone
+2022-03-08 18:02:50,790 INFO [main_name] Adding parking space zone
+2022-03-08 18:02:50,790 INFO [main_name] Adding logistic center 1 green
+2022-03-08 18:02:50,790 INFO [main_name] Adding logistic center 2 red
+2022-03-08 18:02:50,790 INFO [main_name] Adding logistic center 3 blue
+2022-03-08 18:02:50,790 INFO [main_name] Adding logistic center 4 yellow
+2022-03-08 18:02:50,790 INFO [main_name] Initialized seeding api
+2022-03-08 18:02:50,791 INFO [main_name] Initialized double elim api
+2022-03-08 18:02:50,792 INFO [main_name] Found ipv4: lo adr: 127.0.0.1
+2022-03-08 18:02:50,792 INFO [main_name] Found ipv4: wlp1s0 adr: 10.20.86.177
+2022-03-08 18:02:50,792 INFO [main_name] Found ipv6: lo adr: ::1
+2022-03-08 18:02:50,792 INFO [main_name] Found ipv6: wlp1s0 adr: fe80::a076:53cc:91b9:d257
+2022-03-08 18:02:50,792 INFO [main_name] IP IS: 10.20.86.177
+2022-03-08 18:02:50,792 INFO [main_name] Initialized rest api
+2022-03-08 18:04:21,668 INFO [main_name] Robot 1 has collected a goal
+2022-03-08 18:04:21,668 INFO [main_name] Robot 1 scored and now stands at: 1
+2022-03-08 18:04:25,980 INFO [main_name] Robot 1 has collected a goal
+2022-03-08 18:04:25,980 INFO [main_name] Robot 1 scored and now stands at: 2
+2022-03-08 18:04:28,644 INFO [main_name] Robot 1 has collected a goal
+2022-03-08 18:04:28,644 INFO [main_name] Robot 1 scored and now stands at: 3
+2022-03-08 18:46:43,207 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-08 18:46:43,207 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-08 18:46:43,207 INFO [main_name] First pipeline is: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-08 18:46:45,071 INFO [main_name] Trying to get frame with first pipeline
+2022-03-08 18:46:45,137 INFO [main_name] Initialized USBCamera on /dev/video4
+2022-03-08 18:46:45,137 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1696969091 in OpencvHandler
+2022-03-08 18:46:45,160 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1696969091 in OpencvHandler - DONE
+2022-03-08 18:46:45,160 INFO [main_name] Using camera calibration file: misc/calibrations/camera_1920_1080.xml
+2022-03-08 18:46:45,160 INFO [main_name] Initialized opencv handler
+2022-03-08 18:46:45,161 INFO [main_name] Initialized Sqlite3 database
+2022-03-08 18:46:45,161 INFO [main_name] Initialized double elim gamestate
+2022-03-08 18:46:45,161 INFO [main_name] Created a gamestate
+2022-03-08 18:46:45,161 INFO [main_name] Resetting gamestate
+2022-03-08 18:46:45,161 INFO [main_name] Initialized seeding gamestate
+2022-03-08 18:46:45,161 INFO [main_name] Resetting gamestate
+2022-03-08 18:46:45,161 INFO [main_name] Adding bmazon zone: 0
+2022-03-08 18:46:45,161 INFO [main_name] Adding bmazon zone: 1
+2022-03-08 18:46:45,161 INFO [main_name] Adding bmazon zone: 2
+2022-03-08 18:46:45,161 INFO [main_name] Adding bmazon zone: 3
+2022-03-08 18:46:45,161 INFO [main_name] Adding bmazon zone: 4
+2022-03-08 18:46:45,161 INFO [main_name] Adding bmazon zone: 5
+2022-03-08 18:46:45,161 INFO [main_name] Adding top left construction area (wood)
+2022-03-08 18:46:45,161 INFO [main_name] Adding top right construction area (steel)
+2022-03-08 18:46:45,161 INFO [main_name] Adding lower left construction area (concrete)
+2022-03-08 18:46:45,161 INFO [main_name] Adding lower right construction area (bricks)
+2022-03-08 18:46:45,161 INFO [main_name] Adding house building zone
+2022-03-08 18:46:45,161 INFO [main_name] Adding parking space zone
+2022-03-08 18:46:45,161 INFO [main_name] Adding logistic center 1 green
+2022-03-08 18:46:45,161 INFO [main_name] Adding logistic center 2 red
+2022-03-08 18:46:45,161 INFO [main_name] Adding logistic center 3 blue
+2022-03-08 18:46:45,161 INFO [main_name] Adding logistic center 4 yellow
+2022-03-08 18:46:45,161 INFO [main_name] Initialized seeding api
+2022-03-08 18:46:45,161 INFO [main_name] Initialized double elim api
+2022-03-08 18:46:45,162 INFO [main_name] Found ipv4: lo adr: 127.0.0.1
+2022-03-08 18:46:45,162 INFO [main_name] Found ipv4: wlp1s0 adr: 10.20.86.177
+2022-03-08 18:46:45,162 INFO [main_name] Found ipv6: lo adr: ::1
+2022-03-08 18:46:45,162 INFO [main_name] Found ipv6: wlp1s0 adr: fe80::a076:53cc:91b9:d257
+2022-03-08 18:46:45,162 INFO [main_name] IP IS: 10.20.86.177
+2022-03-08 18:46:45,162 INFO [main_name] Initialized rest api
+2022-03-10 17:22:54,087 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-10 17:22:54,088 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-10 17:22:54,088 INFO [main_name] First pipeline is: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-10 17:22:55,937 INFO [main_name] Trying to get frame with first pipeline
+2022-03-10 17:22:55,997 INFO [main_name] Initialized USBCamera on /dev/video4
+2022-03-10 17:22:55,997 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1400875939 in OpencvHandler
+2022-03-10 17:22:56,018 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1400875939 in OpencvHandler - DONE
+2022-03-10 17:22:56,018 INFO [main_name] Using camera calibration file: misc/calibrations/camera_1920_1080.xml
+2022-03-10 17:22:56,019 INFO [main_name] Initialized opencv handler
+2022-03-10 17:22:56,022 INFO [main_name] Initialized Sqlite3 database
+2022-03-10 17:22:56,022 INFO [main_name] Initialized double elim gamestate
+2022-03-10 17:22:56,022 INFO [main_name] Created a gamestate
+2022-03-10 17:22:56,022 INFO [main_name] Resetting gamestate
+2022-03-10 17:22:56,022 INFO [main_name] Initialized seeding gamestate
+2022-03-10 17:22:56,022 INFO [main_name] Resetting gamestate
+2022-03-10 17:22:56,022 INFO [main_name] Adding bmazon zone: 0
+2022-03-10 17:22:56,022 INFO [main_name] Adding bmazon zone: 1
+2022-03-10 17:22:56,022 INFO [main_name] Adding bmazon zone: 2
+2022-03-10 17:22:56,022 INFO [main_name] Adding bmazon zone: 3
+2022-03-10 17:22:56,022 INFO [main_name] Adding bmazon zone: 4
+2022-03-10 17:22:56,022 INFO [main_name] Adding bmazon zone: 5
+2022-03-10 17:22:56,022 INFO [main_name] Adding top left construction area (wood)
+2022-03-10 17:22:56,022 INFO [main_name] Adding top right construction area (steel)
+2022-03-10 17:22:56,022 INFO [main_name] Adding lower left construction area (concrete)
+2022-03-10 17:22:56,022 INFO [main_name] Adding lower right construction area (bricks)
+2022-03-10 17:22:56,022 INFO [main_name] Adding house building zone
+2022-03-10 17:22:56,022 INFO [main_name] Adding parking space zone
+2022-03-10 17:22:56,022 INFO [main_name] Adding logistic center 1 green
+2022-03-10 17:22:56,022 INFO [main_name] Adding logistic center 2 red
+2022-03-10 17:22:56,022 INFO [main_name] Adding logistic center 3 blue
+2022-03-10 17:22:56,022 INFO [main_name] Adding logistic center 4 yellow
+2022-03-10 17:22:56,022 INFO [main_name] Initialized seeding api
+2022-03-10 17:22:56,022 INFO [main_name] Initialized double elim api
+2022-03-10 17:22:56,022 INFO [main_name] Found ipv4: lo adr: 127.0.0.1
+2022-03-10 17:22:56,022 INFO [main_name] Found ipv4: wlp1s0 adr: 10.20.4.189
+2022-03-10 17:22:56,022 INFO [main_name] Found ipv6: lo adr: ::1
+2022-03-10 17:22:56,022 INFO [main_name] Found ipv6: wlp1s0 adr: fe80::a076:53cc:91b9:d257
+2022-03-10 17:22:56,022 INFO [main_name] IP IS: 10.20.4.189
+2022-03-10 17:22:56,022 INFO [main_name] Initialized rest api
+2022-03-10 17:28:28,861 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-10 17:28:28,861 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-10 17:28:28,861 INFO [main_name] First pipeline is: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-10 17:28:29,773 INFO [main_name] Trying to get frame with first pipeline
+2022-03-10 17:28:29,840 INFO [main_name] Initialized USBCamera on /dev/video4
+2022-03-10 17:28:29,841 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1120498216 in OpencvHandler
+2022-03-10 17:28:29,856 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_1120498216 in OpencvHandler - DONE
+2022-03-10 17:28:29,856 INFO [main_name] Using camera calibration file: misc/calibrations/camera_1920_1080.xml
+2022-03-10 17:28:29,857 INFO [main_name] Initialized opencv handler
+2022-03-10 17:28:29,857 INFO [main_name] Initialized Sqlite3 database
+2022-03-10 17:28:29,857 INFO [main_name] Initialized double elim gamestate
+2022-03-10 17:28:29,857 INFO [main_name] Created a gamestate
+2022-03-10 17:28:29,857 INFO [main_name] Resetting gamestate
+2022-03-10 17:28:29,857 INFO [main_name] Initialized seeding gamestate
+2022-03-10 17:28:29,857 INFO [main_name] Resetting gamestate
+2022-03-10 17:28:29,857 INFO [main_name] Adding bmazon zone: 0
+2022-03-10 17:28:29,857 INFO [main_name] Adding bmazon zone: 1
+2022-03-10 17:28:29,857 INFO [main_name] Adding bmazon zone: 2
+2022-03-10 17:28:29,857 INFO [main_name] Adding bmazon zone: 3
+2022-03-10 17:28:29,857 INFO [main_name] Adding bmazon zone: 4
+2022-03-10 17:28:29,857 INFO [main_name] Adding bmazon zone: 5
+2022-03-10 17:28:29,857 INFO [main_name] Adding top left construction area (wood)
+2022-03-10 17:28:29,857 INFO [main_name] Adding top right construction area (steel)
+2022-03-10 17:28:29,858 INFO [main_name] Adding lower left construction area (concrete)
+2022-03-10 17:28:29,858 INFO [main_name] Adding lower right construction area (bricks)
+2022-03-10 17:28:29,858 INFO [main_name] Adding house building zone
+2022-03-10 17:28:29,858 INFO [main_name] Adding parking space zone
+2022-03-10 17:28:29,858 INFO [main_name] Adding logistic center 1 green
+2022-03-10 17:28:29,858 INFO [main_name] Adding logistic center 2 red
+2022-03-10 17:28:29,858 INFO [main_name] Adding logistic center 3 blue
+2022-03-10 17:28:29,858 INFO [main_name] Adding logistic center 4 yellow
+2022-03-10 17:28:29,858 INFO [main_name] Initialized seeding api
+2022-03-10 17:28:29,858 INFO [main_name] Initialized double elim api
+2022-03-10 17:28:29,858 INFO [main_name] Found ipv4: lo adr: 127.0.0.1
+2022-03-10 17:28:29,858 INFO [main_name] Found ipv4: wlp1s0 adr: 10.20.4.189
+2022-03-10 17:28:29,858 INFO [main_name] Found ipv6: lo adr: ::1
+2022-03-10 17:28:29,859 INFO [main_name] Found ipv6: wlp1s0 adr: fe80::a076:53cc:91b9:d257
+2022-03-10 17:28:29,859 INFO [main_name] IP IS: 10.20.4.189
+2022-03-10 17:28:29,859 INFO [main_name] Initialized rest api
+2022-03-11 15:20:53,120 INFO [main_name] Started main seeding VERSION 0.1.4-2
+2022-03-11 15:20:53,121 INFO [main_name] Initializing opencv handler with USB camera
+2022-03-11 15:20:53,122 INFO [main_name] First pipeline is: v4l2src device=/dev/video4 ! image/jpeg,framerate=30/1,width=1920, height=1080,type=video ! jpegdec ! videoconvert ! video/x-raw ! appsink
+2022-03-11 15:20:55,001 INFO [main_name] Trying to get frame with first pipeline
+2022-03-11 15:20:55,048 INFO [main_name] Initialized USBCamera on /dev/video4
+2022-03-11 15:20:55,049 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_326487750 in OpencvHandler
+2022-03-11 15:20:55,073 INFO [main_name] Creating NDI_StreamPublisher with output name: compAPI_326487750 in OpencvHandler - DONE
+2022-03-11 15:20:55,073 INFO [main_name] Using camera calibration file: misc/calibrations/camera_1920_1080.xml
+2022-03-11 15:20:55,074 INFO [main_name] Initialized opencv handler
+2022-03-11 15:20:55,077 INFO [main_name] Initialized Sqlite3 database
+2022-03-11 15:20:55,077 INFO [main_name] Initialized double elim gamestate
+2022-03-11 15:20:55,077 INFO [main_name] Created a gamestate
+2022-03-11 15:20:55,077 INFO [main_name] Resetting gamestate
+2022-03-11 15:20:55,077 INFO [main_name] Tried generating logistic packages
+2022-03-11 15:20:55,077 INFO [main_name] Initialized seeding gamestate
+2022-03-11 15:20:55,077 INFO [main_name] Resetting gamestate
+2022-03-11 15:20:55,077 INFO [main_name] Adding bmazon zone: 0
+2022-03-11 15:20:55,077 INFO [main_name] Adding bmazon zone: 1
+2022-03-11 15:20:55,077 INFO [main_name] Adding bmazon zone: 2
+2022-03-11 15:20:55,077 INFO [main_name] Adding bmazon zone: 3
+2022-03-11 15:20:55,077 INFO [main_name] Adding bmazon zone: 4
+2022-03-11 15:20:55,077 INFO [main_name] Adding bmazon zone: 5
+2022-03-11 15:20:55,077 INFO [main_name] Adding top left construction area (wood)
+2022-03-11 15:20:55,077 INFO [main_name] Adding top right construction area (steel)
+2022-03-11 15:20:55,077 INFO [main_name] Adding lower left construction area (concrete)
+2022-03-11 15:20:55,077 INFO [main_name] Adding lower right construction area (bricks)
+2022-03-11 15:20:55,077 INFO [main_name] Adding house building zone
+2022-03-11 15:20:55,077 INFO [main_name] Adding parking space zone
+2022-03-11 15:20:55,077 INFO [main_name] Adding logistic center 1 green
+2022-03-11 15:20:55,077 INFO [main_name] Adding logistic center 2 red
+2022-03-11 15:20:55,077 INFO [main_name] Adding logistic center 3 blue
+2022-03-11 15:20:55,077 INFO [main_name] Adding logistic center 4 yellow
+2022-03-11 15:20:55,077 INFO [main_name] Initialized seeding api
+2022-03-11 15:20:55,077 INFO [main_name] Initialized double elim api
+2022-03-11 15:20:55,078 INFO [main_name] Found ipv4: lo adr: 127.0.0.1
+2022-03-11 15:20:55,079 INFO [main_name] Found ipv4: wlp1s0 adr: 192.168.125.2
+2022-03-11 15:20:55,079 INFO [main_name] Found ipv6: lo adr: ::1
+2022-03-11 15:20:55,079 INFO [main_name] Found ipv6: wlp1s0 adr: fe80::9eeb:1e04:432d:635a
+2022-03-11 15:20:55,079 INFO [main_name] IP IS: 192.168.125.2
+2022-03-11 15:20:55,079 INFO [main_name] Initialized rest api

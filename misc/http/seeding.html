@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta this_name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta this_name="this_description" content=""/>
+    <meta this_name="author" content=""/>
+    <title>Training API - Controls</title>
+    <link href="/config/style.css" rel="stylesheet"/>
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
+          crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">API Control</a>
+    <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i>
+    </button>
+</nav>
+<div id="layoutSidenav">
+    <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+            <div class="sb-sidenav-menu">
+                <div class="nav">
+                    <div class="sb-sidenav-menu-heading">API Controls</div>
+                    <a class="nav-link" href="/config/seeding">
+                        <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        Seeding
+                    </a>
+                    <a class="nav-link" href="/config/doubleElim">
+                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                        Double Elimination
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="card shadow-lg border-0 rounded-lg mt-3">
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Game
+                                        Info</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="alert alert-info" role="alert" id="version">
+                                            Version 0.16
+                                        </div>
+                                        <div class="alert alert-info" role="alert">
+                                            API ip:
+                                            <div id="local_ip"></div>
+                                            <hr>
+                                            Put this at the top of your python program for all API functions to call
+                                            this computer. Important: don't change the order of those three commands!
+                                            <br>
+                                            <code style="color: black">
+                                                import os <br>
+                                                os.environ["API_URL"] = "http://<span style="white-space: nowrap;"
+                                                                                      id="local_ip_0"></span>:5000/"
+                                                <br>
+                                                from compLib.Api import Seeding
+                                            </code>
+                                        </div>
+                                        <hr>
+                                        <div class="alert alert-primary" role="alert" id="is_seeding">
+                                            Gamestate is set to seeding
+                                        </div>
+                                        <input id="set_to_de" class="btn btn-primary" type="submit"
+                                               value="Set to Seeding" onclick="set_to_se()"
+                                               name="submit"> <br>
+                                        <hr>
+                                        <label for="teams">Choose a team:</label>
+                                        <select name="teams" id="teams" onchange="setMeta()">
+                                            <option value="ROBO ur LEMLL">ROBO ur LEMLL</option>
+                                            <option value="Roberarius">Roberarius</option>
+                                            <option value="The T.I.M.E.">The T.I.M.E.</option>
+                                            <option value="Robros">Robros</option>
+                                            <option value="WWWW">WWWW</option>
+                                            <option value="alias">alias</option>
+                                            <option value="Ioob">Ioob</option>
+                                            <option value="blank">blank</option>
+                                            <option value="rc2c">rc2c</option>
+                                            <option value="String_Error">String_Error</option>
+                                        </select>
+                                        <div class="alert alert-primary" role="alert">
+                                            Seeding Round Number:
+                                            <input type="number" id="round_number" value="1" min="1"
+                                                   onchange="setMeta()">
+                                        </div>
+                                        <input id="start_button" class="btn btn-primary"
+                                               style="background-color: #f44336; border-color: #f44336;" type="submit"
+                                               value="Start Match" onclick="startMatch()"
+                                               name="submit"> <br>
+                                        <input class="btn btn-primary" type="submit" value="Set Areas on API"
+                                               onclick="setAllAreas()"
+                                               name="submit"> <br>
+                                        <hr>
+                                        <input class="btn btn-primary" type="submit" value="Reset API" onclick="reset()"
+                                               name="submit"> <br>
+                                        <input id="spin_btn" class="btn btn-primary" type="submit"
+                                               value="You spin me right round baby right round" onclick="spin()"
+                                               name="submit"> <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="card shadow-lg border-0 rounded-lg mt-3">
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Game
+                                        Status</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="alert alert-danger" role="alert" id="gameStarted">
+                                            Game has not started yet
+                                        </div>
+                                        <div class="alert alert-primary" role="alert">
+                                            Game Time
+                                            <div id="timeleft">0</div>
+                                        </div>
+                                        <div class="alert alert-primary" role="alert">
+                                            Robot Speed Modifier:
+                                            <div id="robot_speed_limit">0</div>
+                                        </div>
+                                        <div class="alert alert-primary" role="alert">
+                                            Game Score from api:
+                                            <div id="score">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="card shadow-lg border-0 rounded-lg mt-3">
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Bmazon
+                                        Status</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="alert alert-info" role="alert">
+                                            Get Bmazon will return:
+                                            <div id="bmazon_zones">[]</div>
+                                        </div>
+                                        <div id="robot_in_bmazon_zone" class="alert alert-danger" role="alert">
+                                            Robot is in bmazon zone
+                                        </div>
+                                        <div id="robot_picked_up_bmazon_packages" class="alert alert-danger"
+                                             role="alert">
+                                            Was in bmazon zone and made request
+                                        </div>
+                                        <div id="bmazon_delivered_to_goal_0" class="alert alert-danger" role="alert">
+                                            Delivered to goal 1
+                                        </div>
+                                        <div id="bmazon_delivered_to_goal_1" class="alert alert-danger" role="alert">
+                                            Delivered to goal 2
+                                        </div>
+                                        <div id="bmazon_delivered_to_goal_2" class="alert alert-danger" role="alert">
+                                            Delivered to goal 3
+                                        </div>
+                                        <div id="bmazon_delivered_to_goal_fast_0" class="alert alert-danger"
+                                             role="alert">
+                                            Delivered to goal 1 fast
+                                        </div>
+                                        <div id="bmazon_delivered_to_goal_fast_1" class="alert alert-danger"
+                                             role="alert">
+                                            Delivered to goal 2 fast
+                                        </div>
+                                        <div id="bmazon_delivered_to_goal_fast_2" class="alert alert-danger"
+                                             role="alert">
+                                            Delivered to goal 3 fast
+                                        </div>
+                                        <div class="alert alert-danger" role="alert">
+                                            Score:
+                                            <div id="bmazon_score">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="card shadow-lg border-0 rounded-lg mt-3">
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">House
+                                        Buildings</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="alert alert-info" role="alert">
+                                            Currently carrying material
+                                            <div id="currently_carrying_material">-1</div>
+                                        </div>
+                                        <div id="in_material_zone_0" class="alert alert-danger" role="alert">
+                                            Robot is in material zone 0
+                                        </div>
+                                        <div id="in_material_zone_1" class="alert alert-danger" role="alert">
+                                            Robot is in material zone 1
+                                        </div>
+                                        <div id="in_material_zone_2" class="alert alert-danger" role="alert">
+                                            Robot is in material zone 2
+                                        </div>
+                                        <div id="in_material_zone_3" class="alert alert-danger" role="alert">
+                                            Robot is in material zone 3
+                                        </div>
+                                        <div class="alert alert-info" role="alert">
+                                            Delivered from zone 0:
+                                            <div id="material_delivery_zone_0">0</div>
+                                        </div>
+                                        <div class="alert alert-info" role="alert">
+                                            Delivered from zone 1:
+                                            <div id="material_delivery_zone_1">0</div>
+                                        </div>
+                                        <div class="alert alert-info" role="alert">
+                                            Delivered from zone 2:
+                                            <div id="material_delivery_zone_2">0</div>
+                                        </div>
+                                        <div class="alert alert-info" role="alert">
+                                            Delivered from zone 3:
+                                            <div id="material_delivery_zone_3">0</div>
+                                        </div>
+                                        <div class="alert alert-danger" role="alert">
+                                            Score:
+                                            <div id="house_building_score">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="card shadow-lg border-0 rounded-lg mt-3">
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Garbage</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="robot_in_house_building_zone" class="alert alert-danger" role="alert">
+                                            Robot in house building zone
+                                        </div>
+                                        <div id="garbage_ready" class="alert alert-danger" role="alert">
+                                            Garbage ready for pickup
+                                        </div>
+                                        <div id="carrying_garbage" class="alert alert-danger" role="alert">
+                                            Robots is carrying garbage
+                                        </div>
+                                        <div id="garbage_delivered" class="alert alert-danger" role="alert">
+                                            Robot delivered garbage
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="card shadow-lg border-0 rounded-lg mt-3">
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Parking
+                                        Space</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="robot_in_parking_space" class="alert alert-danger" role="alert">
+                                            Robot in parking space
+                                        </div>
+                                        <div class="alert alert-danger" role="alert">
+                                            Score:
+                                            <div id="parking_space_score">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="card shadow-lg border-0 rounded-lg mt-3">
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Logistic
+                                        Center</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="in_logistic_center_0" class="alert alert-danger" role="alert">
+                                            Robot in logistic center 0 (Green)
+                                        </div>
+                                        <div class="alert alert-danger" role="alert">
+                                            Content logistic center 0 (Green):
+                                            <div id="logistic_centers_0"></div>
+                                        </div>
+                                        <div id="in_logistic_center_1" class="alert alert-danger" role="alert">
+                                            Robot in logistic center 1 (Red)
+                                        </div>
+                                        <div class="alert alert-danger" role="alert">
+                                            Content logistic center 1 (Red):
+                                            <div id="logistic_centers_1"></div>
+                                        </div>
+                                        <div id="in_logistic_center_2" class="alert alert-danger" role="alert">
+                                            Robot in logistic center 2 (Blue)
+                                        </div>
+                                        <div class="alert alert-danger" role="alert">
+                                            Content logistic center 2 (Blue):
+                                            <div id="logistic_centers_2"></div>
+                                        </div>
+                                        <div id="in_logistic_center_3" class="alert alert-danger" role="alert">
+                                            Robot in logistic center 3 (Yellow)
+                                        </div>
+                                        <div class="alert alert-danger" role="alert">
+                                            Content logistic center 3 (Yellow):
+                                            <div id="logistic_centers_3"></div>
+                                        </div>
+                                        <hr>
+                                        <div class="alert alert-info" role="alert">
+                                            Robot carrying:
+                                            <div id="logistic_cargo_0" style="display:inline;"></div>
+                                            ,
+                                            <div id="logistic_cargo_1" style="display:inline;"></div>
+                                        </div>
+                                        <hr>
+                                        <div class="alert alert-danger" role="alert">
+                                            Logistic Center Score:
+                                            <div id="logistic_center_score"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5" id="all-areas">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var area_names = [];
+
+                    function submitScores() {
+                        console.log("submit scores is not yet ready");
+                    }
+
+                    function set_to_se() {
+                        let xmlHttp = new XMLHttpRequest();
+                        xmlHttp.open("GET", "/config/setToSeeding", false);
+                        xmlHttp.send(null);
+                    }
+
+                    function getAreas() {
+                        let xmlHttp = new XMLHttpRequest();
+                        xmlHttp.open("GET", "/config/getAreas", false);
+                        xmlHttp.send(null);
+
+                        let res = JSON.parse(xmlHttp.responseText);
+                        console.log(res);
+                        res = res['Areas'];
+
+                        var area_html = '';
+                        area_names = [];
+
+                        let elem;
+                        console.log('before for')
+                        console.log(res.length)
+                        for (let i = 0; i < res.length; i++) {
+                            console.log('in for')
+                            elem = res[i];
+                            console.log(elem)
+                            area_names.push(elem['name']);
+                            area_html += `<div class="card shadow-lg border-0 rounded-lg mt-3">
+                                    <div class="card-header"><h3
+                                            class="text-center font-weight-light my-4">${elem['name']}</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label class="medium mb-1" for="pos_x">Pos X</label>
+                                            <input name="name" class="form-control py-4" id="${elem['name']}_pos_x"
+                                                   type="number" value="${elem['pos_x']}" onchange="setArea('${elem['name']}')"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="medium mb-1" for="pos_y">Pos Y</label>
+                                            <input name="name" class="form-control py-4" id="${elem['name']}_pos_y"
+                                                   type="number" value="${elem['pos_y']}" onchange="setArea('${elem['name']}')"/>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group">
+                                            <label class="medium mb-1" for="pos_x">Size X</label>
+                                            <input name="name" class="form-control py-4" id="${elem['name']}_size_x"
+                                                   type="number" value="${elem['size_x']}" onchange="setArea('${elem['name']}')"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="medium mb-1" for="pos_x">Size Y</label>
+                                            <input name="name" class="form-control py-4" id="${elem['name']}_size_y"
+                                                   type="number" value="${elem['size_y']}" onchange="setArea('${elem['name']}')"/>
+                                        </div>
+                                    </div>
+                                </div>`
+                        }
+
+                        document.getElementById('all-areas').innerHTML = area_html;
+                    }
+
+                    function setAllAreas() {
+                        for (let i = 0; i < area_names.length; i++) {
+                            setArea(area_names[i]);
+                        }
+                    }
+
+                    function setArea(areaName) {
+                        let xmlHttp = new XMLHttpRequest();
+                        xmlHttp.open("POST", "/config/setAreas", true);
+
+                        xmlHttp.setRequestHeader("Content-Type", "text/plain");
+                        xmlHttp.send(JSON.stringify({
+                            "AreaName": areaName,
+                            "pos_x": parseInt(document.getElementById(`${areaName}_pos_x`).value),
+                            "pos_y": parseInt(document.getElementById(`${areaName}_pos_y`).value),
+                            "size_x": parseInt(document.getElementById(`${areaName}_size_x`).value),
+                            "size_y": parseInt(document.getElementById(`${areaName}_size_y`).value)
+                        }));
+                    }
+
+                    function reset() {
+                        let xmlHttp = new XMLHttpRequest();
+                        xmlHttp.open("GET", "/config/resetState", false);
+                        xmlHttp.send(null);
+                        location.reload();
+                    }
+
+                    function spin() {
+                        let xmlHttp = new XMLHttpRequest();
+                        xmlHttp.open("GET", "/config/spin", false);
+                        xmlHttp.send(null);
+                    }
+
+                    function startMatch() {
+                        let xmlHttp = new XMLHttpRequest();
+                        xmlHttp.open("GET", "/config/startMatch", false);
+                        xmlHttp.send(null);
+                    }
+
+                    function setMeta() {
+                        let xmlHttp = new XMLHttpRequest();
+                        xmlHttp.open("POST", "/config/setMeta", true);
+
+                        let roundNumber = parseInt(document.getElementById("round_number").value);
+                        if (isNaN(roundNumber)) {
+                            roundNumber = 0;
+                        }
+
+                        xmlHttp.setRequestHeader("Content-Type", "text/plain");
+                        xmlHttp.send(JSON.stringify({
+                            "teamname": document.getElementById("teams").value,
+                            "round_number": roundNumber
+                        }));
+                    }
+
+                    function getInfo() {
+                        let xmlHttp = new XMLHttpRequest();
+                        xmlHttp.open("GET", "/config/getInfo", false);
+                        xmlHttp.send(null);
+
+                        let res = JSON.parse(xmlHttp.responseText);
+
+                        if (res["is_seeding"] == false) {
+                            return;
+                        }
+
+                        document.getElementById("local_ip").innerText = res["local_ip"];
+                        document.getElementById("local_ip_0").innerText = res["local_ip"];
+
+                        if (res["running"] == true && res["timeleft"] != 0) {
+                            document.getElementById("gameStarted").className = "alert alert-success";
+                            document.getElementById("gameStarted").innerText = "Game is running";
+                        } else if (res["ready"] == true) {
+                            document.getElementById("gameStarted").className = "alert alert-warning";
+                            document.getElementById("gameStarted").innerText = "Waiting for bot to leave starting zone";
+                        } else if (res["running"] == true && res["timeleft"] == 0) {
+                            document.getElementById("gameStarted").className = "alert alert-info";
+                            document.getElementById("gameStarted").innerText = "Game is finished";
+                        } else {
+                            document.getElementById("gameStarted").className = "alert alert-danger";
+                            document.getElementById("gameStarted").innerText = "Game has not started yet";
+                        }
+
+                        document.getElementById("timeleft").innerText = res["timeleft"];
+                        document.getElementById("score").innerText = res["score"];
+                        document.getElementById("robot_speed_limit").innerText = res["robot_speed_limit"];
+                        document.getElementById("bmazon_score").innerText = res["bmazon_score"];
+                        document.getElementById("bmazon_zones").innerText = res["bmazon_zones"];
+
+                        if (res["can_start"] == true) {
+                            document.getElementById("start_button").style = "background-color: #4CAF50; border-color: #4CAF50;";
+                        } else {
+                            document.getElementById("start_button").style = "background-color: #f44336; border-color: #f44336;";
+                        }
+
+                        if (res["is_spinning"] == true) {
+                            document.getElementById("spin_btn").style = "background-color: #4CAF50; border-color: #4CAF50;";
+                        } else {
+                            document.getElementById("spin_btn").style = "background-color: #f44336; border-color: #f44336;";
+                        }
+
+                        if (res["robot_in_bmazon_zone"] == true) {
+                            document.getElementById("robot_in_bmazon_zone").className = "alert alert-success";
+                        } else {
+                            document.getElementById("robot_in_bmazon_zone").className = "alert alert-danger";
+                        }
+
+                        if (res["robot_picked_up_bmazon_packages"] == true) {
+                            document.getElementById("robot_picked_up_bmazon_packages").className = "alert alert-success";
+                        } else {
+                            document.getElementById("robot_picked_up_bmazon_packages").className = "alert alert-danger";
+                        }
+
+                        if (res["bmazon_delivered_to_goal_0"] == true) {
+                            document.getElementById("bmazon_delivered_to_goal_0").className = "alert alert-success";
+                        } else {
+                            document.getElementById("bmazon_delivered_to_goal_0").className = "alert alert-danger";
+                        }
+
+                        if (res["bmazon_delivered_to_goal_1"] == true) {
+                            document.getElementById("bmazon_delivered_to_goal_1").className = "alert alert-success";
+                        } else {
+                            document.getElementById("bmazon_delivered_to_goal_1").className = "alert alert-danger";
+                        }
+
+                        if (res["bmazon_delivered_to_goal_2"] == true) {
+                            document.getElementById("bmazon_delivered_to_goal_2").className = "alert alert-success";
+                        } else {
+                            document.getElementById("bmazon_delivered_to_goal_2").className = "alert alert-danger";
+                        }
+
+                        if (res["bmazon_delivered_to_goal_fast_0"] == true) {
+                            document.getElementById("bmazon_delivered_to_goal_fast_0").className = "alert alert-success";
+                        } else {
+                            document.getElementById("bmazon_delivered_to_goal_fast_0").className = "alert alert-danger";
+                        }
+
+                        if (res["bmazon_delivered_to_goal_fast_1"] == true) {
+                            document.getElementById("bmazon_delivered_to_goal_fast_1").className = "alert alert-success";
+                        } else {
+                            document.getElementById("bmazon_delivered_to_goal_fast_1").className = "alert alert-danger";
+                        }
+
+                        if (res["bmazon_delivered_to_goal_fast_2"] == true) {
+                            document.getElementById("bmazon_delivered_to_goal_fast_2").className = "alert alert-success";
+                        } else {
+                            document.getElementById("bmazon_delivered_to_goal_fast_2").className = "alert alert-danger";
+                        }
+
+                        document.getElementById("house_building_score").innerText = res["house_building_score"];
+                        document.getElementById("currently_carrying_material").innerText = res["currently_carrying_material"];
+
+                        document.getElementById("material_delivery_zone_0").innerText = res["material_delivery_zone_0"];
+                        document.getElementById("material_delivery_zone_1").innerText = res["material_delivery_zone_1"];
+                        document.getElementById("material_delivery_zone_2").innerText = res["material_delivery_zone_2"];
+                        document.getElementById("material_delivery_zone_3").innerText = res["material_delivery_zone_3"];
+
+                        if (res["in_material_zone_0"] == true) {
+                            document.getElementById("in_material_zone_0").className = "alert alert-success";
+                        } else {
+                            document.getElementById("in_material_zone_0").className = "alert alert-danger";
+                        }
+
+                        if (res["in_material_zone_1"] == true) {
+                            document.getElementById("in_material_zone_1").className = "alert alert-success";
+                        } else {
+                            document.getElementById("in_material_zone_1").className = "alert alert-danger";
+                        }
+
+                        if (res["in_material_zone_2"] == true) {
+                            document.getElementById("in_material_zone_2").className = "alert alert-success";
+                        } else {
+                            document.getElementById("in_material_zone_2").className = "alert alert-danger";
+                        }
+
+                        if (res["in_material_zone_3"] == true) {
+                            document.getElementById("in_material_zone_3").className = "alert alert-success";
+                        } else {
+                            document.getElementById("in_material_zone_3").className = "alert alert-danger";
+                        }
+
+                        if (res["robot_in_house_building_zone"] == true) {
+                            document.getElementById("robot_in_house_building_zone").className = "alert alert-success";
+                        } else {
+                            document.getElementById("robot_in_house_building_zone").className = "alert alert-danger";
+                        }
+
+                        if (res["garbage_ready"] == true) {
+                            document.getElementById("garbage_ready").className = "alert alert-success";
+                        } else {
+                            document.getElementById("garbage_ready").className = "alert alert-danger";
+                        }
+
+                        if (res["carrying_garbage"] == true) {
+                            document.getElementById("carrying_garbage").className = "alert alert-success";
+                        } else {
+                            document.getElementById("carrying_garbage").className = "alert alert-danger";
+                        }
+
+                        if (res["garbage_delivered"] == true) {
+                            document.getElementById("garbage_delivered").className = "alert alert-success";
+                        } else {
+                            document.getElementById("garbage_delivered").className = "alert alert-danger";
+                        }
+
+                        if (res["robot_in_parking_space"] == true) {
+                            document.getElementById("robot_in_parking_space").className = "alert alert-success";
+                        } else {
+                            document.getElementById("robot_in_parking_space").className = "alert alert-danger";
+                        }
+
+                        document.getElementById("parking_space_score").innerText = res["parking_space_score"];
+
+                        if (res["in_logistic_center_0"] == true) {
+                            document.getElementById("in_logistic_center_0").className = "alert alert-success";
+                        } else {
+                            document.getElementById("in_logistic_center_0").className = "alert alert-danger";
+                        }
+
+                        if (res["in_logistic_center_1"] == true) {
+                            document.getElementById("in_logistic_center_1").className = "alert alert-success";
+                        } else {
+                            document.getElementById("in_logistic_center_1").className = "alert alert-danger";
+                        }
+
+                        if (res["in_logistic_center_2"] == true) {
+                            document.getElementById("in_logistic_center_2").className = "alert alert-success";
+                        } else {
+                            document.getElementById("in_logistic_center_2").className = "alert alert-danger";
+                        }
+
+                        if (res["in_logistic_center_3"] == true) {
+                            document.getElementById("in_logistic_center_3").className = "alert alert-success";
+                        } else {
+                            document.getElementById("in_logistic_center_3").className = "alert alert-danger";
+                        }
+
+                        document.getElementById("logistic_cargo_0").innerText = res["logistic_cargo_0"];
+                        document.getElementById("logistic_cargo_1").innerText = res["logistic_cargo_1"];
+
+                        document.getElementById("logistic_centers_0").innerText = res["logistic_centers_0"];
+                        document.getElementById("logistic_centers_1").innerText = res["logistic_centers_1"];
+                        document.getElementById("logistic_centers_2").innerText = res["logistic_centers_2"];
+                        document.getElementById("logistic_centers_3").innerText = res["logistic_centers_3"];
+                        document.getElementById("logistic_center_score").innerText = res["logistic_center_score"];
+
+                        if (res["is_seeding"] == true) {
+                            document.getElementById("is_seeding").innerText = "Game state is set to seeding";
+                            document.getElementById("is_seeding").style = "background-color: #4CAF50; border-color: #4CAF50;";
+                        } else {
+                            document.getElementById("is_seeding").innerText = "Gamestate is set to double elimination! Switch to seeding below";
+                            document.getElementById("is_seeding").style = "background-color: #f44336; border-color: #f44336;";
+                        }
+                    }
+
+                    getAreas();
+                    setMeta();
+                    setInterval(getInfo, 100);
+                </script>
+
+            </div>
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; Verein zur Förderung von Wissenschaft und Technik an
+                        Schulen (F-WuTS) 2010-2022
+                    </div>
+                    <div>
+                        <a href="https://robo4you.at/datenschutz">Privacy Policy</a>
+                        &middot;
+                        <a href="https://robo4you.at/kontakt">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>

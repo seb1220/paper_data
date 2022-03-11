@@ -1,0 +1,39 @@
+2022-03-04 19:42:44,594 WARNING [default] Failed to start rest api server. Waiting for address to be released by the system. This can take up to 2 minutes, please wait. (Retrying in 10 seconds)
+2022-03-04 19:42:54,595 WARNING [default] Retrying to start api server.
+2022-03-04 19:42:54,595 WARNING [default] Failed to start rest api server. Waiting for address to be released by the system. This can take up to 2 minutes, please wait. (Retrying in 10 seconds)
+2022-03-04 19:46:03,764 WARNING [default] Using unsafe frame get for more performance
+2022-03-04 19:46:03,764 WARNING [default] Setting forcefully to double elimination
+2022-03-04 19:46:03,765 WARNING [default] Assuming its a static camera and increasing avg samples
+2022-03-04 19:47:33,096 WARNING [default] Using unsafe frame get for more performance
+2022-03-04 19:47:33,096 WARNING [default] Setting forcefully to double elimination
+2022-03-04 19:47:33,096 WARNING [default] Assuming its a static camera and increasing avg samples
+2022-03-06 14:30:56,836 WARNING [default] Using unsafe frame get for more performance
+2022-03-06 14:30:56,836 WARNING [default] Setting forcefully to double elimination
+2022-03-06 14:30:56,837 WARNING [default] Assuming its a static camera and increasing avg samples
+2022-03-06 14:34:19,559 WARNING [default] opencv can't determine height and width, using default (1280x720) this usually works
+2022-03-07 09:38:57,871 WARNING [default] Using unsafe frame get for more performance
+2022-03-07 09:38:57,871 WARNING [default] Setting forcefully to double elimination
+2022-03-07 09:38:57,872 WARNING [default] Assuming its a static camera and increasing avg samples
+2022-03-07 09:39:15,475 WARNING [default] opencv can't determine height and width, using default (1280x720) this usually works
+2022-03-07 09:39:27,025 WARNING [default] Using unsafe frame get for more performance
+2022-03-07 09:39:27,025 WARNING [default] Setting forcefully to double elimination
+2022-03-07 09:39:27,026 WARNING [default] Assuming its a static camera and increasing avg samples
+2022-03-08 15:07:44,558 WARNING [default] opencv can't determine height and width, using default (1280x720) this usually works
+2022-03-08 15:08:00,564 WARNING [default] Using unsafe frame get for more performance
+2022-03-08 15:08:00,564 WARNING [default] Setting forcefully to double elimination
+2022-03-08 15:08:00,564 WARNING [default] Assuming its a static camera and increasing avg samples
+2022-03-08 18:02:50,792 WARNING [default] Using unsafe frame get for more performance
+2022-03-08 18:02:50,792 WARNING [default] Setting forcefully to double elimination
+2022-03-08 18:02:50,792 WARNING [default] Assuming its a static camera and increasing avg samples
+2022-03-08 18:46:45,162 WARNING [default] Using unsafe frame get for more performance
+2022-03-08 18:46:45,162 WARNING [default] Setting forcefully to double elimination
+2022-03-08 18:46:45,163 WARNING [default] Assuming its a static camera and increasing avg samples
+2022-03-10 17:22:56,022 WARNING [default] Using unsafe frame get for more performance
+2022-03-10 17:22:56,022 WARNING [default] Setting forcefully to double elimination
+2022-03-10 17:22:56,022 WARNING [default] Assuming its a static camera and increasing avg samples
+2022-03-10 17:28:29,859 WARNING [default] Using unsafe frame get for more performance
+2022-03-10 17:28:29,859 WARNING [default] Setting forcefully to double elimination
+2022-03-10 17:28:29,859 WARNING [default] Assuming its a static camera and increasing avg samples
+2022-03-11 15:20:55,079 WARNING [default] Using unsafe frame get for more performance
+2022-03-11 15:20:55,079 WARNING [default] Setting forcefully to double elimination
+2022-03-11 15:20:55,079 WARNING [default] Assuming its a static camera and increasing avg samples

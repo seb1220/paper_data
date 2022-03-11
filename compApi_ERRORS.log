@@ -1,0 +1,91 @@
+2022-03-04 19:42:44,176 ERROR [default] Pipeline still not initialized
+2022-03-04 19:42:44,179 ERROR [default] Pipeline still not initialized
+2022-03-04 19:42:44,181 ERROR [default] Pipeline still not initialized
+2022-03-04 19:42:44,185 ERROR [default] Pipeline still not initialized
+2022-03-04 19:42:44,594 ERROR [default] eventfd(0, EFD_NONBLOCK): Too many open files (../include/pistache/mailbox.h:237)
+2022-03-04 19:42:54,595 ERROR [default] Address already in use
+2022-03-04 19:46:03,434 ERROR [default] Pipeline still not initialized
+2022-03-04 19:46:03,439 ERROR [default] Pipeline still not initialized
+2022-03-04 19:46:03,444 ERROR [default] Pipeline still not initialized
+2022-03-04 19:46:03,449 ERROR [default] Pipeline still not initialized
+2022-03-06 14:30:56,506 ERROR [default] Pipeline still not initialized
+2022-03-06 14:30:56,509 ERROR [default] Pipeline still not initialized
+2022-03-06 14:30:56,512 ERROR [default] Pipeline still not initialized
+2022-03-06 14:30:56,516 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,497 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,500 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,502 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,505 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,508 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,511 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,514 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,517 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,520 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,523 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,526 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,530 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,533 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,536 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,539 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,541 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,544 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,547 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,550 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,553 ERROR [default] Pipeline still not initialized
+2022-03-06 14:34:19,553 ERROR [default] Unable to get frame from camera -> trying to reinitialize
+2022-03-06 14:34:19,561 ERROR [default] Unable to open USBCamera Stream. Is the camera really attached on /dev/video4
+2022-03-06 14:34:19,561 ERROR [default] Unable to initialize opencv_handler with USB camera
+2022-03-07 09:38:57,543 ERROR [default] Pipeline still not initialized
+2022-03-07 09:38:57,546 ERROR [default] Pipeline still not initialized
+2022-03-07 09:38:57,549 ERROR [default] Pipeline still not initialized
+2022-03-07 09:38:57,552 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,421 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,423 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,426 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,428 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,430 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,433 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,436 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,439 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,442 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,444 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,446 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,449 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,452 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,455 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,458 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,460 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,463 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,465 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,468 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,470 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:15,470 ERROR [default] Unable to get frame from camera -> trying to reinitialize
+2022-03-07 09:39:15,479 ERROR [default] Unable to open USBCamera Stream. Is the camera really attached on /dev/video4
+2022-03-07 09:39:15,479 ERROR [default] Unable to initialize opencv_handler with USB camera
+2022-03-07 09:39:26,709 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:26,712 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:26,715 ERROR [default] Pipeline still not initialized
+2022-03-07 09:39:26,719 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,531 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,532 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,534 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,535 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,536 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,537 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,538 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,540 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,541 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,542 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,544 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,545 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,546 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,548 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,549 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,550 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,552 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,553 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,554 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,555 ERROR [default] Pipeline still not initialized
+2022-03-08 15:07:44,555 ERROR [default] Unable to get frame from camera -> trying to reinitialize
+2022-03-08 15:07:44,561 ERROR [default] Unable to open USBCamera Stream. Is the camera really attached on /dev/video4
+2022-03-08 15:07:44,561 ERROR [default] Unable to initialize opencv_handler with USB camera

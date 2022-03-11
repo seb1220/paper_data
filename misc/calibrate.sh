@@ -1,0 +1,1 @@
+opencv_interactive-calibration -t=chessboard -vis=window -w=6 -h=9 -of=camera_new.xml -pf=defaultConfig.xmls
