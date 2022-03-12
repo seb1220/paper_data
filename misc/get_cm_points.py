@@ -67,7 +67,10 @@ for i in range(max_size):
     result.append((round(sum(xlist) / len(xlist), 2), round(sum(ylist) / len(ylist), 2), round(sum(alist) / len(alist), 2)))
 
 print(result)
-with open("basic_per_cm2.txt", "a") as writer:
+
+# das musst du verändern für die krassere Ausgabe
+
+with open("basic_per_cm_y.txt", "a") as writer:
     for k in result:
         text = "(" + str(round(k[0], 2)) + ", " + str(round(k[1], 2)) + ")"
         writer.write(text + "\n")
